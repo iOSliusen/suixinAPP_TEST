@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MerchantViewController">
+            <connections>
+                <outlet property="SettingButton" destination="CLQ-db-3bj" id="0cd-od-MFC"/>
+                <outlet property="StoreName" destination="d0u-Pq-HKP" id="FFl-py-mDH"/>
+                <outlet property="StoreNumber" destination="OBX-vp-Ux7" id="gbg-jh-I1Q"/>
+                <outlet property="manageCommodity" destination="Xtl-f6-HJM" id="8Jm-pv-TDx"/>
+                <outlet property="manageIndent" destination="ex8-TZ-oYN" id="8KP-gN-b0o"/>
+                <outlet property="publicCommodity" destination="KCe-lf-jXr" id="f5z-sA-Cps"/>
+                <outlet property="userHeadImage" destination="e0p-zZ-f87" id="wq3-dv-uR5"/>
+                <outlet property="view" destination="WeW-d6-l9o" id="4Oo-hL-EEK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WeW-d6-l9o">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tP-mq-UrT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="店铺名:LOL专卖" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0u-Pq-HKP">
+                            <rect key="frame" x="141" y="25" width="151" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.38381052799999998" blue="0.26408541260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="店铺号:66668888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBX-vp-Ux7">
+                            <rect key="frame" x="141" y="65" width="186" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" red="0.7930877221" green="0.27469793869999998" blue="0.1767947738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chat_bizhi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e0p-zZ-f87">
+                            <rect key="frame" x="17" y="14" width="102" height="101"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="RqH-7y-asi"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="iwc-nq-8tz">
+                    <rect key="frame" x="8" y="138" width="359" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCe-lf-jXr">
+                            <rect key="frame" x="0.0" y="0.0" width="84.5" height="100"/>
+                            <color key="backgroundColor" red="1" green="0.38987317640000002" blue="0.27099053319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button" image="fabu.png"/>
+                            <state key="highlighted" image="fabu.png"/>
+                            <connections>
+                                <action selector="PublicCommodity:" destination="-1" eventType="touchUpInside" id="mxK-wQ-fFS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtl-f6-HJM">
+                            <rect key="frame" x="91.5" y="0.0" width="84.5" height="100"/>
+                            <color key="backgroundColor" red="1" green="0.38987317640000002" blue="0.27099053319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button" image="guanli.png"/>
+                            <state key="highlighted" image="guanli.png"/>
+                            <connections>
+                                <action selector="ManageCommdity:" destination="-1" eventType="touchUpInside" id="bgh-PS-rrr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLQ-db-3bj">
+                            <rect key="frame" x="183" y="0.0" width="84.5" height="100"/>
+                            <color key="backgroundColor" red="1" green="0.38987317640000002" blue="0.27099053319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button" image="setting.png"/>
+                            <state key="highlighted" image="setting.png"/>
+                            <connections>
+                                <action selector="SettingButton:" destination="-1" eventType="touchUpInside" id="6ID-08-SU0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ex8-TZ-oYN">
+                            <rect key="frame" x="274.5" y="0.0" width="84.5" height="100"/>
+                            <color key="backgroundColor" red="1" green="0.38987317640000002" blue="0.27099053319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button" image="dingdan.png"/>
+                            <state key="highlighted" image="dingdan.png"/>
+                            <connections>
+                                <action selector="MangeIndent:" destination="-1" eventType="touchUpInside" id="UXw-ij-BDE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="eOL-vn-8QQ"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iwc-nq-8tz" firstAttribute="top" secondItem="2tP-mq-UrT" secondAttribute="bottom" constant="10" id="Eoq-fe-KG3"/>
+                <constraint firstItem="2tP-mq-UrT" firstAttribute="top" secondItem="WeW-d6-l9o" secondAttribute="top" id="Tfj-I3-7rm"/>
+                <constraint firstItem="2tP-mq-UrT" firstAttribute="leading" secondItem="WeW-d6-l9o" secondAttribute="leading" id="V3z-ju-eS2"/>
+                <constraint firstAttribute="trailingMargin" secondItem="iwc-nq-8tz" secondAttribute="trailing" id="fMw-CG-6Z4"/>
+                <constraint firstAttribute="trailing" secondItem="2tP-mq-UrT" secondAttribute="trailing" id="l4l-Q9-PW2"/>
+                <constraint firstItem="iwc-nq-8tz" firstAttribute="leading" secondItem="WeW-d6-l9o" secondAttribute="leadingMargin" id="x6N-Sy-3sN"/>
+            </constraints>
+            <point key="canvasLocation" x="-564" y="-118"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_bizhi.jpg" width="1440" height="900"/>
+        <image name="dingdan.png" width="251" height="336"/>
+        <image name="fabu.png" width="254" height="302"/>
+        <image name="guanli.png" width="243" height="299"/>
+        <image name="setting.png" width="228" height="300"/>
+    </resources>
+</document>

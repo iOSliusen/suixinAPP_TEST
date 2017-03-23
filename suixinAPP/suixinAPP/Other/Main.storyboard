@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H2d-5w-HF9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Merchant View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MerchantViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WdM-RJ-xHb">
+                                <rect key="frame" x="0.0" y="64" width="600" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="店铺名:LOL专卖" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQp-4H-XES">
+                                        <rect key="frame" x="141" y="25" width="151" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.38381052799999998" blue="0.26408541260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="店铺号:66668888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amU-0r-g2L">
+                                        <rect key="frame" x="141" y="65" width="186" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.79308772208121825" green="0.27469793865990727" blue="0.17679477384340914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chat_bizhi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ize-UP-CBi">
+                                        <rect key="frame" x="17" y="14" width="102" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1z1-Yt-rRs"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="CsU-eg-ltQ">
+                                <rect key="frame" x="20" y="202" width="560" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyz-OL-OZg">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.38987317640955654" blue="0.27099053315400434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="fabu.png"/>
+                                        <state key="highlighted" image="fabu.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsJ-62-gEq">
+                                        <rect key="frame" x="142" y="0.0" width="135" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.38987317640000002" blue="0.27099053319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="guanli.png"/>
+                                        <state key="highlighted" image="guanli.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IR0-LW-WJ7">
+                                        <rect key="frame" x="284" y="0.0" width="134" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.38987317640000002" blue="0.27099053319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="setting.png"/>
+                                        <state key="highlighted" image="setting.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g7-QV-crG">
+                                        <rect key="frame" x="425" y="0.0" width="135" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.38987317640000002" blue="0.27099053319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="dingdan.png"/>
+                                        <state key="highlighted" image="dingdan.png"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="PQH-W0-vHu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WdM-RJ-xHb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1uv-Pz-QJG"/>
+                            <constraint firstAttribute="trailing" secondItem="WdM-RJ-xHb" secondAttribute="trailing" id="FgH-LU-M4h"/>
+                            <constraint firstItem="WdM-RJ-xHb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FlM-ln-iX7"/>
+                            <constraint firstItem="CsU-eg-ltQ" firstAttribute="top" secondItem="WdM-RJ-xHb" secondAttribute="bottom" constant="10" id="Qz4-w0-3ou"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CsU-eg-ltQ" secondAttribute="trailing" id="m4I-le-Ylt"/>
+                            <constraint firstItem="CsU-eg-ltQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pWM-7Y-hQP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jMh-Ef-qr4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113" y="-50"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cx7-BN-3T7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H2d-5w-HF9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qai-PV-Mb9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="l6G-tI-rWI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBA-Lh-k1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="473"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat_bizhi.jpg" width="1440" height="900"/>
+        <image name="dingdan.png" width="251" height="336"/>
+        <image name="fabu.png" width="254" height="302"/>
+        <image name="guanli.png" width="243" height="299"/>
+        <image name="setting.png" width="228" height="300"/>
+    </resources>
+</document>

@@ -1,0 +1,22 @@
+//
+//  suixinPrefixHeader.pch
+//  suixinAPP
+//
+//  Created by 刘殿武 on 2017/3/7.
+//  Copyright © 2017年 YGTechnology. All rights reserved.
+//
+
+#ifndef suixinPrefixHeader_pch
+#define suixinPrefixHeader_pch
+
+// 宽度与高度
+#define SCREENWIDTH     [UIScreen  mainScreen].bounds.size.width
+#define SCREENHEIGHT    [UIScreen mainScreen].bounds.size.height
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* suixinPrefixHeader_pch */
