@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommodityDescriptionViewController">
             <connections>
+                <outlet property="bottomConstraints" destination="Az0-aC-lLU" id="Kow-Lv-Ft8"/>
+                <outlet property="descriptionTextView" destination="Dbu-Ef-tdM" id="ehf-7V-bIh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,7 +19,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dbu-Ef-tdM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
             <color key="backgroundColor" red="0.5" green="0.96701388888888884" blue="0.80075412326388884" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Dbu-Ef-tdM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3uK-eq-ntv"/>
+                <constraint firstAttribute="bottom" secondItem="Dbu-Ef-tdM" secondAttribute="bottom" id="Az0-aC-lLU"/>
+                <constraint firstAttribute="trailing" secondItem="Dbu-Ef-tdM" secondAttribute="trailing" id="jEY-ph-Jrg"/>
+                <constraint firstItem="Dbu-Ef-tdM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mdz-bX-J3Z"/>
+            </constraints>
+            <point key="canvasLocation" x="16.5" y="-23.5"/>
         </view>
     </objects>
 </document>

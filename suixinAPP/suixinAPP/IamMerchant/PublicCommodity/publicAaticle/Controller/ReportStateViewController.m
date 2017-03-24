@@ -19,10 +19,12 @@
 #import "categoryTableViewCell.h"
 #import <MBProgressHUD.h>
 #import "CommodityDescriptionViewController.h"
+#import "SelectCityTableViewController.h"
+#import "SelectCommodityCategaryTableViewController.h"
 #define MAX_LIMIT_NUMS  60
 
 
-@interface ReportStateViewController ()<UITextViewDelegate,UIGestureRecognizerDelegate,WhoCanSeeViewControllerDelegate,MBProgressHUDDelegate>
+@interface ReportStateViewController ()<UITextViewDelegate,UIGestureRecognizerDelegate,WhoCanSeeViewControllerDelegate,MBProgressHUDDelegate,YGCitySelectVCDelegate,YGCategarySelectVCDelegate>
 
 @property (nonatomic,weak)UITextView *reportStateTextView;
 @property (nonatomic,weak)UILabel *pLabel;
@@ -42,7 +44,8 @@
 @property (nonatomic,strong)MBProgressHUD * HUD;
 
 @property (nonatomic,strong)UIView * HUDSuperView;
-
+@property (strong,nonatomic)NSString * cityname ;//城市名
+@property (strong,nonatomic)NSString * categaryname ;//类目名
 
 @end
 
@@ -144,14 +147,18 @@
 }
 
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    
-    NSLog(@"belongType : %@",_belongType);
-    
-    
-    
-}
+
+
+
+
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    
+//    NSLog(@"belongType : %@",_belongType);
+//    
+//    
+//    
+//}
 #pragma mark -初始化上传时的hud,以及其父视图
 -(void)initProgressHUDAndSuperView{
     if (_HUDSuperView == nil) {
@@ -172,12 +179,7 @@
         
     }
     
-    
-
-
-
-
-
+ 
 }
 -(void)hideHUD:(MBProgressHUD*)hud{
 
@@ -247,20 +249,6 @@
 
 
 
-
-
-
-
-
-
-#pragma mark - 设置上传内容所属类型
-- (void)setBelongTypeValue:(NSString *)delegateText{
-    
-    self.belongType = delegateText;
-    
-    NSLog(@"s2222belongType : %@",_belongType);
-    
-}
 #pragma mark - 上传按钮
 - (IBAction)uploadImageToServer:(UIBarButtonItem *)sender {
     //    sender.enabled = NO;
@@ -720,7 +708,13 @@
             NSArray * cellArr = [[NSBundle mainBundle]loadNibNamed:@"categoryTableViewCell" owner:self options:nil];
             categoryTableViewCell * cells =cellArr[0];
             cells.LabelName.text = @"类目";
+        if (_categaryname == nil) {
             
+            cells.discription.text = @"";
+        }else{
+            cells.discription.text = _categaryname;
+        
+        }
             cell1 = cells;
         
         
@@ -761,13 +755,14 @@
             categoryTableViewCell * cells =cellArr[0];
             cells.LabelName.text = @"发货地";
             cells.LabelName.adjustsFontSizeToFitWidth = YES;
+            if (_cityname == nil) {
+                cells.discription.text = @"";
+            }else{
+            cells.discription.text = _cityname;
+            }
 
             cell1 = cells;
 
-        
-        
-        
-        
         
         
         }
@@ -799,14 +794,20 @@
     
     if(indexPath.section == 0)
     {//类目界面
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];//取消选中状态
+
+        SelectCommodityCategaryTableViewController * vc = [[SelectCommodityCategaryTableViewController alloc]init];
+        vc.delegate = self;
         
-        
+        [self presentViewController:vc animated:YES completion:nil];
         
     } else if(indexPath.section == 2){
         
         
         if (indexPath.row == 0) {
             //描述界面
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];//取消选中状态
+
             CommodityDescriptionViewController * vc = [[CommodityDescriptionViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             
@@ -815,20 +816,72 @@
             
         }else if (indexPath.row == 1){
             //发货地
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];//取消选中状态
             
+            SelectCityTableViewController * vc = [[SelectCityTableViewController alloc]init];
+            
+            vc.delegate = self;
+            
+             [self presentViewController:vc animated:YES completion:nil];
        
-            
-            
         }
-        
-        
-        
-        
-        
+    
+    }
+ 
     }
 
+#pragma mark selectcity 代理
+
+- (void)cityDidSelectWithCityName:(NSString *)cityName
+{
+//    UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+//    
+//    categoryTableViewCell * cells = (categoryTableViewCell*)cell;
+//    
+//    cells.discription.text = cityName;
+//    
+//    cell = cells;
+    _cityname = cityName;
     
+
+    NSIndexPath *indexPath=[NSIndexPath indexPathForRow:1 inSection:2];
     
+    [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationNone];
+    
+        NSLog(@"cityname : %@",cityName);
+
+
+}
+
+#pragma mark 商品类目 代理
+
+- (void)CategaryDidSelectWithCategaryName:(NSString *)CategaryName{
+
+
+    _categaryname = CategaryName;
+    
+    NSIndexPath *indexPath=[NSIndexPath indexPathForRow:0 inSection:0];
+    
+    [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationNone];
+   
+    
+    NSLog(@"cityname : %@",CategaryName);
+
+
+}
+- (NSString *)categaryname{
+    if (_categaryname == nil) {
+        _categaryname = [NSString string];
     }
+    return _categaryname;
+}
+- (NSString *)cityname{
+    if (_cityname == nil) {
+        _cityname = [NSString string];
+    }
+    return _cityname;
+
+}
+
 
 @end

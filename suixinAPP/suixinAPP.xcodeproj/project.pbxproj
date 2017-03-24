@@ -14,6 +14,9 @@
 		BC3527931E815C930043863E /* categoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3527911E815C930043863E /* categoryTableViewCell.xib */; };
 		BC3BE16E1E8359C400363DC4 /* CommodityDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3BE16C1E8359C400363DC4 /* CommodityDescriptionViewController.m */; };
 		BC3BE16F1E8359C400363DC4 /* CommodityDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3BE16D1E8359C400363DC4 /* CommodityDescriptionViewController.xib */; };
+		BC3C5C181E84B079001A1DDC /* taobaoShangpinleimu.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC3C5C171E84B079001A1DDC /* taobaoShangpinleimu.txt */; };
+		BC3C5C1C1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5C1A1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.m */; };
+		BC3C5C1D1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3C5C1B1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.xib */; };
 		BC4A26931E71760B00717822 /* VerificationPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4A26911E71760B00717822 /* VerificationPhoneNumberViewController.m */; };
 		BC4A26941E71760B00717822 /* VerificationPhoneNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4A26921E71760B00717822 /* VerificationPhoneNumberViewController.xib */; };
 		BC5345281E82116000A8AB08 /* CommodityPriceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5345261E82116000A8AB08 /* CommodityPriceTableViewCell.m */; };
@@ -72,6 +75,9 @@
 		BCA1F6C51E6E463F00CFF1D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA1F6C31E6E463F00CFF1D9 /* LaunchScreen.storyboard */; };
 		BCA1F6D01E6E464000CFF1D9 /* suixinAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA1F6CF1E6E464000CFF1D9 /* suixinAPPTests.m */; };
 		BCA1F6DB1E6E464000CFF1D9 /* suixinAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA1F6DA1E6E464000CFF1D9 /* suixinAPPUITests.m */; };
+		BCBA88491E8398F000C742EB /* YGCityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBA88481E8398F000C742EB /* YGCityList.plist */; };
+		BCBA884D1E83994A00C742EB /* SelectCityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBA884B1E83994A00C742EB /* SelectCityTableViewController.m */; };
+		BCBA884E1E83994A00C742EB /* SelectCityTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBA884C1E83994A00C742EB /* SelectCityTableViewController.xib */; };
 		BCF885E21E7004840062279F /* guanli.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF885E11E7004840062279F /* guanli.png */; };
 		BCF885E41E7004D90062279F /* dingdan.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF885E31E7004D90062279F /* dingdan.png */; };
 		BCF885E81E7005B20062279F /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF885E71E7005B20062279F /* setting.png */; };
@@ -114,6 +120,10 @@
 		BC3BE16B1E8359C400363DC4 /* CommodityDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityDescriptionViewController.h; sourceTree = "<group>"; };
 		BC3BE16C1E8359C400363DC4 /* CommodityDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityDescriptionViewController.m; sourceTree = "<group>"; };
 		BC3BE16D1E8359C400363DC4 /* CommodityDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommodityDescriptionViewController.xib; sourceTree = "<group>"; };
+		BC3C5C171E84B079001A1DDC /* taobaoShangpinleimu.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = taobaoShangpinleimu.txt; path = ../../../../suixin/suixinAPP_TEST/suixinAPP/suixinAPP/Other/taobaoShangpinleimu.txt; sourceTree = "<group>"; };
+		BC3C5C191E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCommodityCategaryTableViewController.h; sourceTree = "<group>"; };
+		BC3C5C1A1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCommodityCategaryTableViewController.m; sourceTree = "<group>"; };
+		BC3C5C1B1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectCommodityCategaryTableViewController.xib; sourceTree = "<group>"; };
 		BC40CEE61E6EEA1A004730B3 /* suixinPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = suixinPrefixHeader.pch; sourceTree = "<group>"; };
 		BC4A26901E71760B00717822 /* VerificationPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationPhoneNumberViewController.h; sourceTree = "<group>"; };
 		BC4A26911E71760B00717822 /* VerificationPhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationPhoneNumberViewController.m; sourceTree = "<group>"; };
@@ -209,6 +219,10 @@
 		BCA1F6D61E6E464000CFF1D9 /* suixinAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = suixinAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA1F6DA1E6E464000CFF1D9 /* suixinAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = suixinAPPUITests.m; sourceTree = "<group>"; };
 		BCA1F6DC1E6E464000CFF1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBA88481E8398F000C742EB /* YGCityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YGCityList.plist; sourceTree = "<group>"; };
+		BCBA884A1E83994A00C742EB /* SelectCityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCityTableViewController.h; sourceTree = "<group>"; };
+		BCBA884B1E83994A00C742EB /* SelectCityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCityTableViewController.m; sourceTree = "<group>"; };
+		BCBA884C1E83994A00C742EB /* SelectCityTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectCityTableViewController.xib; sourceTree = "<group>"; };
 		BCF885E11E7004840062279F /* guanli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guanli.png; sourceTree = "<group>"; };
 		BCF885E31E7004D90062279F /* dingdan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingdan.png; sourceTree = "<group>"; };
 		BCF885E71E7005B20062279F /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
@@ -270,6 +284,8 @@
 		BC40CEE71E6EEA24004730B3 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BC3C5C171E84B079001A1DDC /* taobaoShangpinleimu.txt */,
+				BCBA88481E8398F000C742EB /* YGCityList.plist */,
 				BCA1F6B81E6E463F00CFF1D9 /* AppDelegate.h */,
 				BCA1F6B91E6E463F00CFF1D9 /* AppDelegate.m */,
 				BCA1F6BB1E6E463F00CFF1D9 /* ViewController.h */,
@@ -540,6 +556,12 @@
 				BC3BE16B1E8359C400363DC4 /* CommodityDescriptionViewController.h */,
 				BC3BE16C1E8359C400363DC4 /* CommodityDescriptionViewController.m */,
 				BC3BE16D1E8359C400363DC4 /* CommodityDescriptionViewController.xib */,
+				BCBA884A1E83994A00C742EB /* SelectCityTableViewController.h */,
+				BCBA884B1E83994A00C742EB /* SelectCityTableViewController.m */,
+				BCBA884C1E83994A00C742EB /* SelectCityTableViewController.xib */,
+				BC3C5C191E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.h */,
+				BC3C5C1A1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.m */,
+				BC3C5C1B1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -789,7 +811,9 @@
 				BC6556861E7836CE004A31CE /* 林峰.png in Resources */,
 				BCF885FC1E7138AE0062279F /* SXRegisterBJ2.jpeg in Resources */,
 				BCF885F41E7130D60062279F /* SXRegisterViewController.xib in Resources */,
+				BC3C5C1D1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.xib in Resources */,
 				BCF885E81E7005B20062279F /* setting.png in Resources */,
+				BCBA884E1E83994A00C742EB /* SelectCityTableViewController.xib in Resources */,
 				BC65567F1E7836CE004A31CE /* location.png in Resources */,
 				BC546FEA1E6F98B00062E15E /* chat_bizhi.jpg in Resources */,
 				BCF885E41E7004D90062279F /* dingdan.png in Resources */,
@@ -799,6 +823,7 @@
 				BC6556811E7836CE004A31CE /* picture2.png in Resources */,
 				BC6556881E7836CE004A31CE /* 高圆圆.png in Resources */,
 				BC6556831E7836CE004A31CE /* picture4.png in Resources */,
+				BC3C5C181E84B079001A1DDC /* taobaoShangpinleimu.txt in Resources */,
 				BCF885F81E7133680062279F /* SXLoginBeijing.jpeg in Resources */,
 				BC4A26941E71760B00717822 /* VerificationPhoneNumberViewController.xib in Resources */,
 				BC5345291E82116000A8AB08 /* CommodityPriceTableViewCell.xib in Resources */,
@@ -808,6 +833,7 @@
 				BC6556871E7836CE004A31CE /* 范冰冰.png in Resources */,
 				BC6556801E7836CE004A31CE /* picture1.png in Resources */,
 				BC6556841E7836CE004A31CE /* reply.png in Resources */,
+				BCBA88491E8398F000C742EB /* YGCityList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +921,7 @@
 				BC65566A1E7836CE004A31CE /* AGImagePickerController.m in Sources */,
 				BC6556781E7836CE004A31CE /* WhoCanSeeViewController.m in Sources */,
 				BC6556791E7836CE004A31CE /* UIImage+ReSize.m in Sources */,
+				BC3C5C1C1E84B0FF001A1DDC /* SelectCommodityCategaryTableViewController.m in Sources */,
 				BC546FEF1E6FB5F70062E15E /* MerchantViewController.m in Sources */,
 				BC65568E1E7836CE004A31CE /* ShowImageView.m in Sources */,
 				BC65566F1E7836CE004A31CE /* AGIPCGridItem.m in Sources */,
@@ -910,6 +937,7 @@
 				BC6556751E7836CE004A31CE /* LocationViewController.m in Sources */,
 				BCA1F6B71E6E463F00CFF1D9 /* main.m in Sources */,
 				BC65568D1E7836CE004A31CE /* ImagePickerChooseView.m in Sources */,
+				BCBA884D1E83994A00C742EB /* SelectCityTableViewController.m in Sources */,
 				BC6556701E7836CE004A31CE /* AGIPCPreviewController.m in Sources */,
 				BC4A26931E71760B00717822 /* VerificationPhoneNumberViewController.m in Sources */,
 				BC65567A1E7836CE004A31CE /* UITableView+Improve.m in Sources */,
